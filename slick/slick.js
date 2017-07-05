@@ -1319,11 +1319,11 @@
           $(this).find('button').first().attr({
             'id': 'slick-slide-control' + _.instanceUid + i,
             'aria-controls': 'slick-slide' + _.instanceUid + mappedSlideIndex,
-            'aria-selected': 'false'
+            'aria-pressed': 'false'
           });
 
         }).eq(_.currentSlide).find('button').attr({
-          'aria-selected': 'true'
+          'aria-pressed': 'true'
         }).end();
 
       }
